@@ -2,8 +2,8 @@ name: CodeQL report
 
 on:
   push:
-    branches-ignore:
-      - '*'
+    branches:
+      - 'codeql-report'
     
 jobs:
   generate-report:
