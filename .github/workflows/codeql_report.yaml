@@ -24,7 +24,7 @@ jobs:
       - name: GitHub Security Report Action   
         uses: peter-murray/github-security-report-action@v2
         with:
-          output-directory: './security-reports'
+          outputDir: './security-reports'
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Upload Security Report Artifact
