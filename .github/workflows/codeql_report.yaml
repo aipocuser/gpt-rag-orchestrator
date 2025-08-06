@@ -1,0 +1,14 @@
+name: CodeQL report
+
+on:
+  push:
+    branches-ignore:
+      - '*'
+    
+jobs:
+  generate-report:
+    name: Generate report
+    runs-on: linux
+    steps:
+      - name: GitHub Security Report Action   
+        uses: peter-murray/github-security-report-action@v2
