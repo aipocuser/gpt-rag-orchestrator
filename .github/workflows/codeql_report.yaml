@@ -25,8 +25,8 @@ jobs:
         uses: github/codeql-action/analyze@v3
 
       - name: GitHub Security Report Action   
-        uses: peter-murray/github-security-report-action@v2
-        #uses: PCStefan/github-security-report-action@v3
+        #uses: peter-murray/github-security-report-action@v2
+        uses: PCStefan/github-security-report-action@v3
         with:
           outputDir: './security-reports'
           token: ${{ secrets.GITHUB_TOKEN }}
