@@ -8,7 +8,7 @@ on:
 jobs:
   generate-report:
     name: Generate report
-    runs-on: linux
+    runs-on: ubuntu-latest
     steps:
       - name: GitHub Security Report Action   
         uses: peter-murray/github-security-report-action@v2
